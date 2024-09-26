@@ -4,7 +4,7 @@ import sys
 
 
 def move_file(file_path, old_path, file):
-    file_type = str(file).split(".")[1]
+    file_type = str(file).split(".")[len(str(file).split("."))-1]
     new_path = old_path + "/" + file_type
     if not os.path.isdir(new_path):
         os.makedirs(new_path)
