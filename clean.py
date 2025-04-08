@@ -2,6 +2,7 @@ import os
 import shutil
 import sys
 
+#
 
 def move_file(file_path, old_path, file):
     file_type = str(file).split(".")[len(str(file).split("."))-1]
